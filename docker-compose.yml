@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  nodejs-srv:
+    build: nodejs-srv
+
+  py-srv:
+    build: py-srv
+    depends_on:
+      - nodejs-srv
